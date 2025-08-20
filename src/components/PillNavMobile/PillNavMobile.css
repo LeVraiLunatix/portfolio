@@ -1,0 +1,37 @@
+.mobile-pill-nav {
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: var(--base, #000);
+  border-radius: 9999px;
+  padding: 8px 12px;
+  display: flex;
+  gap: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* Liens dans la nav mobile */
+.mobile-pill {
+  color: var(--pill-text, #000);
+  background: var(--pill-bg, #fff);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+}
+
+.mobile-pill:hover {
+  background: var(--base, #000);
+  color: #fff;
+}
+
+/* Visible uniquement sur mobile */
+@media (min-width: 769px) {
+  .mobile-pill-nav {
+    display: none;
+  }
+}
