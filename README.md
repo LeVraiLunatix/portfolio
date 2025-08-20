@@ -1,38 +1,57 @@
 # Portfolio - Lunatix
 
-Un portfolio personnel développé en React, déployé sur Vercel.  
-Il présente mes projets, mes réseaux et une section d'introduction.
+Un portfolio minimaliste et moderne pour présenter mes projets, compétences et réseaux sociaux.  
+Construit avec **React** et déployé sur **Vercel**.
 
-## Technologies utilisées
+---
 
-- React.js
-- CSS (custom + responsive)
-- Vercel (hébergement)
+## 🚀 Installation
 
-## Structure
+Clonez le dépôt puis installez les dépendances :
 
-- Hero section (introduction)
-- Projects section (mes projets)
-- Réseaux section (liens vers mes profils)
-- Footer (crédits et source de certains components)
-
-## Installation
-
-# Cloner le dépôt
+```bash
 git clone https://github.com/levrailunatix/portfolio.git
 cd portfolio
-
-# Installer les dépendances
 npm install
+```
 
-# Lancer le projet en local
+---
+
+## 📦 Lancer en local
+
+```bash
 npm start
+```
 
-## Déploiement
+Le projet sera accessible sur [http://localhost:3000](http://localhost:3000).
 
-Le site est déployé sur Vercel.  
-Chaque push sur la branche `main` déclenche un nouveau build et déploiement.
+---
 
-## Crédits
+## 🔨 Build (production)
 
-Source de certains components : [ReactBits](https://www.reactbits.dev/)
+```bash
+npm run build
+```
+
+Les fichiers optimisés seront générés dans le dossier `build/`.
+
+---
+
+## ☁️ Déploiement
+
+Déployé avec [Vercel](https://vercel.com/) :  
+👉 [portfolio-lunatix.vercel.app](https://portfolio-lunatix.vercel.app)
+
+---
+
+## 📚 Sources
+
+Certains composants proviennent de [ReactBits](https://reactbits.dev/).
+
+---
+
+## 👤 Auteur
+
+**Lunatix**  
+- GitHub : [levrailunatix](https://github.com/levrailunatix)  
+- Twitter : [@_levrailunatix_](https://twitter.com/_levrailunatix_)
