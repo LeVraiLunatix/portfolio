@@ -43,3 +43,12 @@
 .reseaux-section {
   padding: 6rem 1.5rem; /* petit padding latéral */
 }
+
+/* Sur mobile, on affiche les logos directement */
+@media (max-width: 768px) {
+  .reseaux-card .reseaux-icons {
+    display: flex !important;  /* ou block si c'est vertical */
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
