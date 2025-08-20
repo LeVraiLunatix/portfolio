@@ -1,0 +1,38 @@
+/* Conteneur interne centré et plus étroit */
+.reseaux-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 700px;   /* <- rétrécit le couloir */
+  margin: 0 auto;     /* <- centre le couloir */
+}
+
+/* Chaque ligne de carte occupe la largeur dispo du "couloir" */
+.reseaux-card-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+/* Alternance gauche / droite dans le couloir */
+.reseaux-card-wrapper.left  { justify-content: flex-start; }
+.reseaux-card-wrapper.right { justify-content: flex-end; }
+
+/* (Optionnel) largeur max d’une carte pour l’équilibre visuel */
+.reseaux-card-wrapper > * {
+  max-width: 360px;
+  width: 100%;
+}
+
+/* Mobile : on recentre toutes les cartes */
+@media (max-width: 768px) {
+  .reseaux-card-wrapper {
+    justify-content: center !important;
+  }
+}
+
+.reseaux-section h2 {
+  text-align: center;
+  margin: 0 auto 2rem auto;
+  font-size: 2rem;
+  max-width: 900px;   /* même largeur que .reseaux-cards */
+}

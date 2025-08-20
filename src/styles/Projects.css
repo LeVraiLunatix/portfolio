@@ -1,0 +1,70 @@
+.projects {
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  font-weight: 600;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+/* chaque ligne */
+.project-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+.project-item.reverse {
+  direction: rtl; /* inverse l'ordre */
+}
+
+.project-item.reverse .project-text {
+  direction: ltr; /* remet le texte à gauche à l'endroit */
+}
+
+.project-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.project-text {
+  text-align: left;
+  max-width: 500px;
+}
+
+.project-text h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.project-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #c5c5c5;
+}
+
+/* Style pour le placeholder SOON */
+.project-soon {
+  width: 100%;
+  height: 280px;
+  border-radius: 16px;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
