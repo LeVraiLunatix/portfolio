@@ -3,8 +3,9 @@ import "./App.css";
 import Projects from "./components/Projects";
 import LightRays from "./components/LightRays/LightRays";
 import PillNav from "./components/PillNav/PillNav";
+import PillNavMobile from "./components/PillNavMobile/PillNavMobile"; // 👈 ajout mobile
 import Reseaux from "./components/Reseaux/Reseaux";
-import Footer from "./components/Footer/Footer"; // 👈 import Footer
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const navItems = [
@@ -27,10 +28,13 @@ function App() {
         </div>
       </section>
 
-      {/* Navigation fixée */}
+      {/* Navigation fixée desktop */}
       <div className="pill-nav-container">
         <PillNav items={navItems} />
       </div>
+
+      {/* Navigation mobile */}
+      <PillNavMobile /> {/* 👈 barre flottante en bas */}
 
       {/* Projects Section */}
       <Projects />
@@ -39,7 +43,7 @@ function App() {
       <Reseaux />
 
       {/* Footer Section */}
-      <Footer /> {/* ✅ ton petit footer chill */}
+      <Footer />
     </div>
   );
 }

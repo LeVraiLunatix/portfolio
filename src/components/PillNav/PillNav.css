@@ -249,3 +249,33 @@
   object-fit: cover; /* garde les proportions sans déformer */
   border-radius: 50%; /* 🔥 rond parfait */
 }
+
+/* ✅ Compact mode pour mobile */
+@media (max-width: 768px) {
+  .pill-nav-items {
+    height: 36px; /* plus petit que les 46px par défaut */
+  }
+
+  .pill {
+    font-size: 12px;      /* texte plus petit */
+    padding: 0 10px;      /* moins large */
+    letter-spacing: 0.5px;
+  }
+
+  .pill-logo {
+    width: 32px;
+    height: 32px;
+    padding: 4px; /* réduit le padding */
+  }
+
+  .pill-logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  .mobile-menu-popover .mobile-menu-link {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+}

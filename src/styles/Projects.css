@@ -68,3 +68,31 @@
   font-weight: 500;
   letter-spacing: 2px;
 }
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .project-item {
+    grid-template-columns: 1fr;   /* image puis texte en dessous */
+    text-align: center;
+  }
+
+  .project-item.reverse {
+    direction: ltr; /* enlève le "reverse" sur mobile */
+  }
+
+  .project-text {
+    text-align: center;
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+
+  .project-image {
+    height: auto;
+    max-height: 250px;  /* évite les images trop grandes */
+    margin: 0 auto;     /* centre l’image */
+  }
+
+  .project-soon {
+    max-height: 250px;
+  }
+}

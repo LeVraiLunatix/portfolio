@@ -3,21 +3,22 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  max-width: 700px;   /* <- rétrécit le couloir */
-  margin: 0 auto;     /* <- centre le couloir */
+  max-width: 800px;   /* un peu plus large pour respirer */
+  margin: 0 auto;
+  align-items: center; /* centre vraiment les enfants */
 }
 
-/* Chaque ligne de carte occupe la largeur dispo du "couloir" */
+/* Chaque ligne de carte */
 .reseaux-card-wrapper {
   display: flex;
   width: 100%;
 }
 
-/* Alternance gauche / droite dans le couloir */
+/* Alternance gauche / droite */
 .reseaux-card-wrapper.left  { justify-content: flex-start; }
 .reseaux-card-wrapper.right { justify-content: flex-end; }
 
-/* (Optionnel) largeur max d’une carte pour l’équilibre visuel */
+/* Largeur max d’une carte */
 .reseaux-card-wrapper > * {
   max-width: 360px;
   width: 100%;
@@ -30,9 +31,15 @@
   }
 }
 
+/* Titre bien centré */
 .reseaux-section h2 {
   text-align: center;
   margin: 0 auto 2rem auto;
   font-size: 2rem;
-  max-width: 900px;   /* même largeur que .reseaux-cards */
+  max-width: 100%;
+}
+
+/* Bonus : pour que les cartes ne collent pas au bord */
+.reseaux-section {
+  padding: 6rem 1.5rem; /* petit padding latéral */
 }
