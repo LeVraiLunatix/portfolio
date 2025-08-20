@@ -35,3 +35,10 @@
     display: none;
   }
 }
+
+/* 🔥 Empêche la nav mobile de cacher le footer */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 80px; /* hauteur de la nav mobile + marge */
+  }
+}
